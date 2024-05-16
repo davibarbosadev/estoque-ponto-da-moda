@@ -1,0 +1,77 @@
+.sub-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-menu-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--clr-primary);
+}
+
+.sub-menu.list-item::before {
+    align-self: start;
+    /* width: 100%; */
+}
+
+.active.sub-menu.list-item::before {
+    width: 100%;
+}
+
+.sub-menu-btn:hover {
+    color: var(--clr-primary);
+}
+
+.sub-menu-list {
+    width: max-content;
+    transform: scale(1);
+    transform-origin: top;
+    position: absolute;
+    z-index: 1000;
+    top: 4rem;
+    list-style: none;
+    display: flex;
+    opacity: 1;
+    gap: 1.6rem;
+    flex-direction: column;
+    padding: 1.2rem 2.4rem 2.4rem;
+    background-color: var(--clr-primary);
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.1);
+    transition: all 0.3s ease-in;
+}
+
+.sub-menu-list::after {
+    content: "";
+    position: absolute;
+    top: -0.8rem;
+    width: 0;
+    height: 0;
+    align-self: center;
+    border-bottom: 1rem solid var(--clr-primary);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+}
+
+.sub-menu-list .list-item::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--clr-secondary);
+}
+
+.sub-menu-list .list-item:hover::before {
+    width: 100%;
+}
+
+.sub-menu-list .main-nav-link {
+    color: var(--clr-secondary);
+}

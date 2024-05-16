@@ -1,0 +1,11 @@
+.container {
+    max-width: 120rem;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.disabled {
+    transform: scale(0) !important;
+    opacity: 0 !important;
+}
+
