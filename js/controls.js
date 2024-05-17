@@ -14,7 +14,6 @@ btnAddItem.addEventListener("click", () => {
         <img src="img/logo.jpg" alt="logo ponto da moda">
     </div>
     <div class="name">
-        <span class="description-title">Descrição:</span>
         <input type="text">
     </div>
     <div class="reference">
