@@ -120,13 +120,14 @@ const addLocalStorage = (productList) => {
     localStorage.setItem("productList", productListJson);
 };
 
-const verificar = () => {
+const toCheckLocalStorage = () => {
     if (JSON.parse(localStorage.getItem("productList")) !== null) {
         productList = (JSON.parse(localStorage.getItem("productList")));
         console.log(productList)
         showProduct(productList)
     }
 }
-verificar()
+
+toCheckLocalStorage()
 
 

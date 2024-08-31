@@ -61,16 +61,18 @@ const createPDF = () => {
         }
     }
     body.innerHTML = sheet;
-};
 
-const verificar = () => {
-    if (JSON.parse(localStorage.getItem("productList")) !== null) {
-        productList = JSON.parse(localStorage.getItem("productList"));
-    }
-    createPDF();
     setTimeout(() => {
         print();
     }, 300);
 };
 
-verificar();
+const toCheckLocalStorage = () => {
+    if (JSON.parse(localStorage.getItem("productList")) !== null) {
+        productList = JSON.parse(localStorage.getItem("productList"));
+    }
+    createPDF();
+   
+};
+
+toCheckLocalStorage();
