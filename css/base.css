@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*
 
 --- 01 TYPOGRAPHY SYSTEM
@@ -15,15 +14,16 @@
 
 :root {
     --clr-primary: #273f87;
-    --clr-secondary: #d4d9e7;
-    --bg-clr: #e9ecf3;
+    --clr-secondary: #ffff00;
+    /* --clr-secondary: #fcd737; */
+    --bg-clr-primary: #e9ecf3;
 }
 
+/* reset basic */
+
 html {
-    /* font-size: 10px; */
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
-    line-height: 1;
     font-weight: 400;
 }
 
@@ -33,11 +33,22 @@ html {
     box-sizing: border-box;
 }
 
+*:focus {
+    border: none;
+    outline: none;
+}
+
 body {
     min-height: 100vh;
-    background-color: var(--bg-clr);
+    background-color: var(--bg-clr-primary);
 }
 
 strong {
     font-weight: 500;
+}
+
+button {
+    border: none;
+    line-height: 1;
+    background-color: transparent;
 }

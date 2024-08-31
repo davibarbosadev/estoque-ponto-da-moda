@@ -4,15 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/app.css" />
-        <title>Estoque Ponto da Moda</title>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        ></script>
+        <title>Ponto da Moda - Estoque</title>
     </head>
     <body>
         <header class="header">
@@ -77,7 +69,48 @@
                 </nav>
             </div>
         </header>
-        <script src="js/menu/sub-menu-btn.js"></script>
-        <script src="js/menu/menu-btn.js"></script>
+
+        <main class="description-box">
+            <h2 class="description-title-page">Descrição para Transferência</h2>
+
+            <form class="form form-transfer">
+                <label for="origin">
+                    <span>Origem</span>
+                    <input type="text" id="origin" />
+                </label>
+                <label for="destiny">
+                    <span>Destino</span>
+                    <input type="text" id="destiny" />
+                </label>
+                <label for="">
+                    <span>Nf-e</span>
+                    <input type="number" />
+                </label>
+                <label for="volume">
+                    <span>Volumes</span>
+                    <input type="number" id="volume" />
+                </label>
+                <input class="submit" type="submit" value="Adicionar" />
+            </form>
+
+            <div class="controls">
+                <button class="btn btn-clean"><span>Limpar Tudo</span></button>
+                <a class="btn btn-print" href="print.html" target="_blank">
+                    <ion-icon class="icon" name="print-outline"></ion-icon>
+                    <span>Imprimir</span>
+                </a>
+            </div>
+        </main>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="js/menu/sub-menu-btn.js" defer></script>
+        <script src="js/menu/menu-btn.js" defer></script>
     </body>
 </html>

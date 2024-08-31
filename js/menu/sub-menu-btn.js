@@ -4,20 +4,17 @@ const subMenu = document.querySelector(".sub-menu");
 let closeSubMenu;
 
 btn.addEventListener("click", () => {
-    if (subMenuList.classList.contains("disabled")) {
-        subMenuList.classList.remove("disabled");
-        subMenu.classList.add("active");
+    if (!subMenu.classList.contains("actived")) {
+        subMenu.classList.add("actived");
     } else {
-        subMenuList.classList.add("disabled");
-        subMenu.classList.remove("active");
+        subMenu.classList.remove("actived");
     }
 });
 
 subMenuList.addEventListener("mouseleave", () => {
     closeSubMenu = setTimeout(() => {
-        if (!subMenuList.classList.contains("disabled")) {
-            subMenuList.classList.add("disabled");
-            subMenu.classList.remove("active");
+        if (subMenu.classList.contains("actived")) {
+            subMenu.classList.remove("actived");
         }
     }, 1000);
 });
@@ -25,3 +22,5 @@ subMenuList.addEventListener("mouseleave", () => {
 subMenuList.addEventListener("mouseenter", () => {
     clearTimeout(closeSubMenu);
 });
+
+
