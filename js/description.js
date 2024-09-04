@@ -91,7 +91,7 @@ const deleteProduct = () => {
     btnsDelete.forEach((item, index) => {
         item.addEventListener("click", () => {
             // item.closest(".description-item-box").remove();
-            const deleteProduct = confirm("Você deseja excluir esse item?");
+            const deleteProduct = confirm("Deseja excluir esse item?");
             if (deleteProduct) {
                 productList.splice(index, 1);
                 addLocalStorage(productList);
@@ -105,7 +105,7 @@ const deleteProduct = () => {
 
 /* limpa a lista de produtos */
 btnClean.addEventListener("click", (evt) => {
-    const allClean = confirm("Deseja lipar tudo?");
+    const allClean = confirm("Deseja limpar tudo?");
     if (allClean) {
         productList.length = 0;
         addLocalStorage(productList);
