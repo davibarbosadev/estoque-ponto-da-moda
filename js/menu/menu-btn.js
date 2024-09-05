@@ -1,4 +1,4 @@
-const btnMenuOpen = document.querySelector(".btn-menu-open");
+/* const btnMenuOpen = document.querySelector(".btn-menu-open");
 const btnMenuClosed = document.querySelector(".btn-menu-closed");
 const mainNav = document.querySelector(".main-nav");
 
@@ -12,4 +12,4 @@ btnMenuClosed.addEventListener("click", () => {
     btnMenuOpen.classList.add("actived");
     btnMenuClosed.classList.remove("actived");
     mainNav.classList.remove("open");
-});
+}); */
